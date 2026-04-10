@@ -32,6 +32,10 @@ async function getApiResponse(aiChatBox) {
         });
         
         let data = await response.json();
+        if (response.status === 503) {
+        aiChatBox.querySelector(".text").innerText = "The AI is currently busy (High Demand). Please try again in a few minutes!";
+        return;
+    }
         console.log(data);
         aiChatBox.querySelector(".text").innerText = data.candidates[0].content.parts[0].text;
     } 
