@@ -8,7 +8,7 @@ let api="https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flas
 
 function createChatBox(html,className) {
     let div= document.createElement("div");
-    div.classList.add("className");
+    div.classList.add(className);
     div.innerHTML=html;
     return div
 }
