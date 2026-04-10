@@ -4,8 +4,8 @@ let chatContainer=document.querySelector(".chat-container");
 let container=document.querySelector(".container");
 let userMessage=null;
 
-let api="https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyBS14yT32V-50KR9kJra5MrNd3zvRXFfm0";
-
+// let api="https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyBS14yT32V-50KR9kJra5MrNd3zvRXFfm0";
+let api="https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyDKiAvpyp9awl0qEj3IMxM0AoQeIfVbpjY"
 function createChatBox(html,className) {
     let div= document.createElement("div");
     div.classList.add(className);
