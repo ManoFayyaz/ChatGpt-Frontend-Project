@@ -5,8 +5,8 @@ let container=document.querySelector(".container");
 let userMessage=null;
 
 //AIzaSyBS14yT32V-50KR9kJra5MrNd3zvRXFfm0
-let api="https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyAG4WE8D7vMpYwmEWkzdABY9QVf6V4Ei_o";
-// let api="https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key="
+// let api="https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=";
+let api="https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyAG4WE8D7vMpYwmEWkzdABY9QVf6V4Ei_o"
 
 function createChatBox(html,className) {
     let div= document.createElement("div");
